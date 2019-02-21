@@ -17,4 +17,5 @@ const subtracao = (a,b) => a-b
 console.log(subtracao(5,2));
 
 const imprimir2 = a => console.log(a);
-imprimir2("Estou imprimindo")
+imprimir2("Estou imprimindo com função arrow")
+
