@@ -8,7 +8,7 @@ console.log(obj1.nome);
 
 function Obj(nome){
     this.nome = nome /* Você pode criar tanto atributos quanto funções para serem vistas
-                        fora da declaração, se tornando pública
+                        fora da declaração com o this, se tornando pública
                         */
     this.exec = function(){
         console.log("Executando...");
@@ -16,7 +16,7 @@ function Obj(nome){
     }                   
 }
 
-const obj2 = new Obj("mesa")
+const obj2 = new Obj("mesa")// O this referenciado a cima, recebeu o nome mesa como parâmetro
 //obj2.nome = "Elvis"
 const obj3 = new Obj("Cadeira")
 
