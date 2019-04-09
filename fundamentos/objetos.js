@@ -5,3 +5,13 @@ prod1.preco = 499.90
 prod1['Desconto Legal'] = 0.40 // Evitar atributos com espaço
 
 console.log(prod1);
+
+
+
+const pessoa = {
+    nome : "elvis" ,
+    idade : 26 ,
+    salario : 1230
+}
+
+console.log(pessoa);

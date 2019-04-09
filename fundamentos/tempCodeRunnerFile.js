@@ -1,11 +1,7 @@
 const pessoa = {
-    nome: "Elvis",
-    idade: 25,
-    endereco : {
-        logradouro: "Rua do zé",
-        numero: 447
-    }
+    nome : "elvis" ,
+    idade : 26 ,
+    salario : 1230
 }
 
-const {nome, idade} = pessoa
-console.log(nome, idade);
+console.log(pessoa);
