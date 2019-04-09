@@ -2,7 +2,7 @@ function tratarErroELancar(erro){
     //throw new Error ("...")
     //throw 10
     //throw true
-    throw 'mensagem' 
+    throw 'Verifique se as palavras estão corretas!' 
     // No throw é lançado o erro, geralmente de uma forma mais explicativa para o usuário
 }
 
@@ -22,4 +22,4 @@ function imprimirNomeGritado(obj){
 
 const obj = {nome: "Roberto"}
 
-imprimirNomeGritado()
+imprimirNomeGritado(obj)
