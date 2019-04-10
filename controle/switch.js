@@ -21,3 +21,7 @@ const imprimirResultado = function (nota){
             break;
     }
 }
+
+imprimirResultado(5)
+imprimirResultado(3.8)
+imprimirResultado(11)
