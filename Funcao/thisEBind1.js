@@ -14,3 +14,7 @@ falar1()// conflito entre paradigmas: funcional e oo
 
 const falarDePessoa = pessoa.falar.bind(pessoa)// O bind faz a amarração do this da função
 falarDePessoa()
+
+
+// Ctrl + Alt + m para a execução do código
+// Ctrl + Alt + n executa o código
