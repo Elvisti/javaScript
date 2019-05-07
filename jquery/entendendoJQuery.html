@@ -14,6 +14,18 @@
     <div>2</div>
 
     <script>
-        // ...
+        $('div').hide(6000).show(5000).fadeOut(5000)
+        console.log($('div').get([0])); // para pegar o objeto especifico dentro da Dom utiliza o get
+        console.log($.isEmptyObject({nome: null}));// Verifica se o objeto está vazio, com uma função utilitária
+        console.log(jQuery.inArray(3, [0.1,3.5,3]));
+        
+        
+        
+
+        $.fn.alterarCor = function(){
+            this.css('background-color', 'blue')
+            return this
+        }
+        $('body').alterarCor().show(5000)
     </script>
 </body>
