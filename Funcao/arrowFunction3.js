@@ -14,5 +14,5 @@ comparaComThisArrow(global)
 comparaComThisArrow(module.exports)
 
 comparaComThisArrow = comparaComThisArrow.bind(obj)
-comparaComThisArrow(obj)
+comparaComThisArrow(obj)// Não altera o this dentro de uma função Arrow, mesmo com o bind
 comparaComThisArrow(module.exports)
