@@ -49,7 +49,26 @@
     </form>
 
     <script>
-        jQuery('ul').hide(5000).show(5000)
+        jQuery('#feira').addClass('destaque').removeClass('destaque')
+        $('li').addClass('destaque')
+        $('[wm-obrigatorio]').addClass('destaque')
+        $('li.opcional').removeClass('destaque')
+        $('div p span').addClass('destaque')//Dentro da Div tem um p e dentro do p tem um span
+
+        // Exclusivo jQuery
+        $('li:first').css('border', 'solid 3px yellow')
+        $('li:odd').css('border', 'solid 10px orange')// Irá pegar números impares
+        $('li:gt(1)').css('border', 'solid 10px white')//Maior que o índice informado
+        $('li:not(:last)').css('border', 'none')// Que não seja o último da lista
+        $('li:contains("r")').css('background-color', 'black')//Verificar se dentro de um elemento contém uma letra e/ou palavra
+
+
+        $('form *').hide(3000)
+        $('form :text').show(2000)
+        $('form :password').show(2000)
+        $('form :checkbox').show(2000)
+        $('form :radio').show(2000)
+        $('form :file').show(2000)
 
     </script>
 </body>
