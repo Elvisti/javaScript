@@ -13,10 +13,15 @@ function Carro(velocidadeMaxima = 200, delta = 5){
 
     //metodo publico
 
-    this.getvelocidade = function (){
+    this.getVelocidadeAtual = function (){
         return velocidadeAtual
     }
 }
 
 const uno = new Carro
 uno.acelerar()
+console.log(uno.getVelocidadeAtual());
+
+const ferrari = new Carro(350, 20)
+ferrari.acelerar()
+console.log(ferrari.getVelocidadeAtual());
