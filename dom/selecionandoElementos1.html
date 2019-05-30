@@ -10,7 +10,20 @@
     <div>Segundo</div>
     <div class="terceiro ultimo">.terceiro .ultimo</div>
     <script>              
-        // ...
+        
+        document.getElementById('primeiro').classList.add('destaque')
+        //document.getElementById('primeiro').classList.remove('destaque')
+
+        const divs = document.getElementsByTagName('div')// Aqui temos um HTMLCollection e algumas coisas não são possíveis de se fazer com ele, então vamos transformar isso em um Array
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))// Transformando a constante divs em um Array
+
+        const divsArray = [...divs]
+        divsArray.forEach(e => e.classList.add('destaque'))
+
+        const ultimosElementos = document.getElementsByClassName('ultimo')
+        for(let e of ultimosElementos){
+            e.classList.remove('destaque')
+        }
     </script>
 </body>
 </html>

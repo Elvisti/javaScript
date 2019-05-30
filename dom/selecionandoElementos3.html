@@ -31,7 +31,22 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        // Formas de selecionar Forms
+
+        console.log(document.forms);// Selecionando o Form
+        console.log(document.forms[0]);// Acessando o index dentro do htmlcollection
+        console.log(document.getElementsByName('pesquisa'));
+        console.log(document.pesquisa);// procura o elemento que tem o nome pesquisa
+        console.log(document.pesquisa.q);// pegando elementos dentro do formulario
+        document.pesquisa.q.value = 'Linux Brasil'// Alterar o valor do input
+        //document.pesquisa.hl.value = 'en-us'
+        console.log(document.pesquisa.hl.selectedIndex);
+        
+        
+        
+        
+        
+        
     </script>
 </body>
 
