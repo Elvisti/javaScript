@@ -25,11 +25,11 @@
             const conteudo = document.getElementById('conteudo')
 
             link.onclick = function(e){
-                e.preventDefault()
+                e.preventDefault()// irá prevenir o comportamento padrão
                 // Requisição Ajax utilizando o fetch
                 fetch(link.getAttribute('wm-nav'))
-                .then(resp => resp.text())
-                .then(html => conteudo.innerHTML = html)
+                .then(resp => resp.text())// depois que a promisse foi resolvida executar o then que irá retornar uma outra promisse 
+                .then(html => conteudo.innerHTML = html)// quando for resolvida a promisse ele retorna o html e altera sobre a section conteudo
             }
         })
 
